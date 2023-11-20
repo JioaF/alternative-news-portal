@@ -1,0 +1,21 @@
+
+// Variables
+@import 'variables';
+
+
+// import all components style
+@import 'components/**.scss';
+
+// import all pages style
+@import 'pages/**.scss';
+
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
