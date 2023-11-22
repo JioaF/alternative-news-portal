@@ -30,5 +30,9 @@ return [
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
-
+    // credentials for new york times api
+    'nyt' => [
+        'url' => env('NYT_URL'),
+        'key' => env('NYT_API_KEY'),
+    ]
 ];

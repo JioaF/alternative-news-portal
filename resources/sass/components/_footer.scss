@@ -1,0 +1,31 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: $color1;
+
+    section {
+        display: flex;
+        color: $color2;
+    }
+
+    #description {
+        margin: 0 10%;
+    }
+
+    #sitemap {
+        ul {
+            list-style-type: '-';
+            padding: 0;
+        }
+
+        a {
+            color: $color2;
+        }
+    }
+
+    #copyright {
+        text-align: center;
+        color: $color3;
+        background-color: $color5;
+    }
+}

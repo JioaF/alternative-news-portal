@@ -1,35 +1,39 @@
-.section{
+.section {
     height: 100vh;
 }
 
-.section:nth-child(odd){
+.section:nth-child(odd) {
     background-color: $color2;
 }
 
-.section:nth-child(even){
+.section:nth-child(even) {
     background-color: $color4;
 }
 
-.section:nth-child(1){
+.section:nth-child(1) {
     padding-left: $paddingSpaceBase;
     display: flex;
-    header{
+
+    header {
         // border: 1px solid red;
         display: flex;
         flex-direction: column;
         width: 50%;
         justify-content: center;
-        h1{
+
+        h1 {
             // border: 1px solid red;
             font-size: 36px;
         }
-        p{
+
+        p {
             // border: 1px solid red;
             width: 35%;
             font-size: 24px;
         }
     }
-    .hero-image{
+
+    .hero-image {
         // border: 1px solid red;
         box-shadow: -4px 0px 2px rgba($color: #000000, $alpha: .2);
         width: 50%;
@@ -40,93 +44,105 @@
     }
 }
 
-.section:nth-child(2), .section:nth-child(3){
+.section:nth-child(2),
+.section:nth-child(3) {
     display: flex;
     width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: $paddingSpaceBase;
-    header{
-        h2{
+
+    header {
+        h2 {
             font-size: 32px;
         }
     }
 }
 
-.section:nth-child(3){
+.section:nth-child(3) {
+
     // border: 1px solid red;
-    header{
-        h3{
+    header {
+        h3 {
             font-size: 28px;
         }
     }
-    .articles{
+
+    .articles {
         width: fit-content;
         flex-wrap: wrap;
         gap: 25px;
     }
-    .more-button{
+
+    .more-button {
         margin: auto;
         width: 75vw;
         text-align: center;
         padding: $paddingSpaceSmall;
         background-color: $color5;
-        a{
+
+        a {
             color: $color3;
             font-size: 16px;
-            text-decoration: none;
         }
     }
 }
 
 
 
-.articles{
+.articles {
     display: flex;
     justify-content: center;
     flex-direction: row;
     // border: 1px solid red;
     width: 100%;
-    .news-source{
+
+    .news-source {
         display: flex;
         flex-direction: column;
         width: 50%;
         margin: 0 10px;
-        .news-header{
+
+        .news-header {
             margin: 10px 0;
             background-color: $color5;
             padding: $paddingSpaceSmall;
+
             // border: 1px solid red;
-            .news-header-title{
+            .news-header-title {
                 padding: 10px;
                 display: flex;
                 justify-content: center;
                 gap: 8px;
                 height: 100px;
                 float: left;
+
                 // border: 1px solid red;
-                img{
+                img {
                     height: 80px;
                     width: 80px;
                     // border: 1px solid red;
                 }
-                h3{
+
+                h3 {
                     height: fit-content;
                     font-size: 28px;
                     // border: 1px solid red;
                 }
             }
-            .news-header-button{
+
+            .news-header-button {
                 display: flex;
                 justify-content: center;
                 height: 100px;
                 float: right;
                 padding-right: 8px;
-                a{
+
+                a {
                     background-color: $color2;
                     color: inherit;
-                    text-decoration: none;
+
                     margin: auto;
                     padding: 10px;
                 }
@@ -134,56 +150,72 @@
         }
     }
 
-    .news{
-                clear: both;
-                padding: 10px;
-                background-color: $color3;
-                margin: 10px 0;
-                display: flex;
-                flex-wrap: wrap;
+    .news {
+        clear: both;
+        padding: 8px;
+        background-color: $color3;
+        margin: 10px 0;
+        display: flex;
+        flex-wrap: wrap;
+
+        // border: 1px solid #ff0000;
+        .news-image {
+            margin: auto;
+            // border: 1px solid #ff0000;
+            flex: 1;
+        }
+
+        .news-detail {
+            display: flex;
+            flex-direction: column;
+            flex: 3;
+            // border: 1px solid #ff0000;
+            .news-info {
+                flex: 1;
+                padding: 0 15px;
                 // border: 1px solid #ff0000;
-                .news-image{
-                    height: fit-content;
+                h4 {
+                    margin: 0;
+                    width: 100%;
+                    font-size: 20px;
                 }
-                .news-detail{
-                    display: flex;
-                    flex-direction: column;
-                    .news-info{
-                        padding: 1px 15px;
-                        h4{
-                            font-size: 24px;
-                        }
-                        h5{
-                            margin-top: -30px;
-                            font-size: 16px;
-                        }
-                        // border: 1px solid #ff0000;
-                    }
-                    .news-button{
-                        width: 300px;
-                        display: flex;
-                        padding: 0 15px;
-                        a{
-                            text-align: center;
-                            margin-right: 8px;
-                            display: inline-block;
-                            text-decoration: none;
-                            padding: 10px;
-                            color: black;
-                            // border: 1px solid #ff0000;
-                        }
-                        a:first-child{
-                            flex: 1;
-                            float: left;
-                            background-color: $color4;
-                        }
-                        a:last-child{
-                            flex: 3;
-                            float: right;
-                            background-color: $color2;
-                        }
-                        // border: 1px solid #ff0000;
-                    }
+
+                h5 {
+                    margin: 5px 0 0 0;
+                    font-size: 16px;
                 }
+
+                // border: 1px solid #ff0000;
+            }
+
+            .news-button {
+
+                display: flex;
+                padding: 0 15px;
+
+                a {
+                    text-align: center;
+                    margin-right: 8px;
+                    display: inline-block;
+                    padding: 10px;
+                    color: black;
+                    // border: 1px solid #ff0000;
+                }
+
+                a:first-child {
+                    flex: 1;
+                    float: left;
+                    background-color: $color4;
+                }
+
+                a:last-child {
+                    flex: 3;
+                    float: right;
+                    background-color: $color2;
+                }
+
+                // border: 1px solid #ff0000;
+            }
+        }
     }
 }

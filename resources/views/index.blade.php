@@ -22,36 +22,23 @@
                         <a href="">More</a>
                     </div>
                 </header>
+                @foreach ($kompas as $k)
                 <article class="news">
                     <div class="news-image">
-                        <img src="{{ asset('images/news-image.png') }}" alt="">
+                        <img src="{{ $k['image'] }}" alt="">
                     </div>
                     <div class="news-detail">
                         <div class="news-info">
-                            <h4>Article Title</h4>
-                            <h5>Category | dd-mm-yyyy</h5>
+                            <h4>{{ $k['title'] }}</h4>
+                            <h5>{{ $k['category'] }} | {{ $k['date'] }}</h5>
                         </div>
                         <div class="news-button">
                             <a href="">Read</a>
-                            <a href="">Read Original</a>
+                            <a href="{{ $k['link'] }}" target="blank">Read Original</a>
                         </div>
                     </div>
                 </article>
-                <article class="news">
-                    <div class="news-image">
-                        <img src="{{ asset('images/news-image.png') }}" alt="">
-                    </div>
-                    <div class="news-detail">
-                        <div class="news-info">
-                            <h4>Article Title</h4>
-                            <h5>Category | dd-mm-yyyy</h5>
-                        </div>
-                        <div class="news-button">
-                            <a href="">Read</a>
-                            <a href="">Read Original</a>
-                        </div>
-                    </div>
-                </article>
+                @endforeach
             </section>
             <section class="news-source">
                 <header class="news-header">
