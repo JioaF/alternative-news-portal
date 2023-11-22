@@ -97,4 +97,74 @@
             </section>
         </div>
     </section>
+    <section class="section">
+        <header>
+            <h3>International News Sources</h3>
+        </header>
+        <div class="articles">
+            <article class="news">
+                <div class="news-image">
+                    <img src="{{ asset('images/news-image.png') }}" alt="">
+                </div>
+                <div class="news-detail">
+                    <div class="news-info">
+                        <h4>Article Title</h4>
+                        <h5>Category | dd-mm-yyyy</h5>
+                    </div>
+                    <div class="news-button">
+                        <a href="">Read</a>
+                        <a href="">Read Original</a>
+                    </div>
+                </div>
+            </article>
+            <article class="news">
+                <div class="news-image">
+                    <img src="{{ asset('images/news-image.png') }}" alt="">
+                </div>
+                <div class="news-detail">
+                    <div class="news-info">
+                        <h4>Article Title</h4>
+                        <h5>Category | dd-mm-yyyy</h5>
+                    </div>
+                    <div class="news-button">
+                        <a href="">Read</a>
+                        <a href="">Read Original</a>
+                    </div>
+                </div>
+            </article>
+            <article class="news">
+                <div class="news-image">
+                    <img src="{{ asset('images/news-image.png') }}" alt="">
+                </div>
+                <div class="news-detail">
+                    <div class="news-info">
+                        <h4>Article Title</h4>
+                        <h5>Category | dd-mm-yyyy</h5>
+                    </div>
+                    <div class="news-button">
+                        <a href="">Read</a>
+                        <a href="">Read Original</a>
+                    </div>
+                </div>
+            </article>
+            <article class="news">
+                <div class="news-image">
+                    <img src="{{ asset('images/news-image.png') }}" alt="">
+                </div>
+                <div class="news-detail">
+                    <div class="news-info">
+                        <h4>Article Title</h4>
+                        <h5>Category | dd-mm-yyyy</h5>
+                    </div>
+                    <div class="news-button">
+                        <a href="">Read</a>
+                        <a href="">Read Original</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="more-button">
+            <a href="">More</a>
+        </div>
+    </section>
 </x-layouts.app>
