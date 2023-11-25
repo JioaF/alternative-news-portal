@@ -1,12 +1,5 @@
 <x-layouts.app>
-    <section class="section">
-        <header>
-            <h1>Alternative News Portal</h1>
-            <p>Read the news without disturbed by ads.</p>
-        </header>
-        <div class="hero-image">
-        </div>
-    </section>
+    <x-header title="Alternative News Portal"/>
     <section class="section">
         <header>
             <h2>Local News Sources</h2>
@@ -15,7 +8,7 @@
             <section class="news-source">
                 <header class="news-header">
                     <div class="news-header-title">
-                        <img src="{{ asset('images/news-image.png') }}" alt="">
+                        <img src="{{ asset('images/kompas-logo.png') }}" alt="">
                         <h3>Kompas</h3>
                     </div>
                     <div class="news-header-button">

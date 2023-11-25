@@ -32,15 +32,44 @@ nav {
 
     ul {
         // border: 1px solid red;
-        flex: 85%;
-        width: 100%;
-        list-style: none;
+        list-style-type: none;
+        margin: 0;
         padding: 0;
-
+        overflow: hidden;
+        flex: 80%;
         li {
+            // border: 1px solid red;
             margin-right: 8px;
             font-size: 24px;
             display: inline;
+        }
+    }
+    .dropdown{
+        display: inline-block;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content{
+        display: none;
+        background-color: $color3;
+        position: absolute;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        min-width: 160px;
+        // z-index: 1;
+        a{
+            padding: 8px;
+            font-size: 20px;
+            color: black;
+            display: block;
+            &:hover{
+                background-color: #f1f1f1;
+            }
+        }
+        &:hover{
+
+            display: block;
         }
     }
 
