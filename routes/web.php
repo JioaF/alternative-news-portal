@@ -20,4 +20,4 @@ Route::get('/home', [HomeController::class, 'index']);
 
 // kompas news route
 Route::get('/news/kompas', [KompasController::class, 'index']);
-Route::get('/news/kompas/read', [KompasController::class, 'read']);
+Route::get('/news/kompas/read/', [KompasController::class, 'read'])->name('readNews');

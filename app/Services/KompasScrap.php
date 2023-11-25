@@ -37,4 +37,20 @@ class KompasScrap
         });
         return $articles;
     }
+
+    public function readNews($url){
+        $response = $this->client->get($url);
+
+        $html = $response->getBody($response);
+
+        $crawler = new Crawler($html);
+
+        return [
+            'title' => $crawler->filter('.read__title')->text(),
+            'image' => $crawler->filter('.cover-photo')->html(),
+            'info' => $crawler->filter('.read__time')->text(),
+            'category' => $crawler->filter('.breadcrumb__item')->eq(2)->text(),
+            'content' =>$article = $crawler->filter('.read__content .clearfix')->html()
+        ];
+    }
 }

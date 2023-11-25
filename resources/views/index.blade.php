@@ -12,7 +12,7 @@
                         <h3>Kompas</h3>
                     </div>
                     <div class="news-header-button">
-                        <a href="">More</a>
+                        <a href="/news/kompas">More</a>
                     </div>
                 </header>
                 @foreach ($kompas as $k)
@@ -26,8 +26,8 @@
                             <h5>{{ $k['category'] }} | {{ $k['date'] }}</h5>
                         </div>
                         <div class="news-button">
-                            <a href="">Read</a>
-                            <a href="{{ $k['link'] }}" target="blank">Read Original</a>
+                            <a href="{{ route('readNews', ['link' => $k['link'].'?page=all']) }}">Read</a>
+                            <a href="{{ $k['link'] }}?page=all" target="blank">Read Original</a>
                         </div>
                     </div>
                 </article>

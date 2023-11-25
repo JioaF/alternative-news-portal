@@ -1,5 +1,5 @@
 <section class="section">
-    <header>
+    <header class="section-title">
         <h1>{{ $title }}</h1>
         <p>{{ $message }}</p>
     </header>
